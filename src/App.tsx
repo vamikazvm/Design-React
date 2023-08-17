@@ -8,12 +8,14 @@ import { Brands } from "./components/pages/Brands";
 import { Rewards } from "./components/pages/Rewards";
 import { Footer } from "./Footer";
 import NavBar from "./NavBar";
+import Slider from "./Slider";
 
 export function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+        <Slider/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -104,6 +104,8 @@ button {
   background: #227840;
 }
 
+/* Footer */
+
 .footer-container {
   width: 1353px;
   height: 378px;
@@ -215,4 +217,24 @@ p {
   font-weight: 700;
   line-height: 17px;
   letter-spacing: 0.55px;
+}
+
+
+/* Slider */
+
+.slide-container .carousel{
+text-align:center;
+position: relative;
+top: 100px;
+left: 70px;
+/* height: 418px; */
+width: 1351px
+}
+
+.carousel .thumb {
+  display: none !important;
+}
+
+.carousel .control-dots .dot.selected{
+  background-color: #227840;
 }
