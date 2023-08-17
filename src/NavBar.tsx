@@ -1,49 +1,47 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.css";
-export function NavBar() {
+
+function NavBar() {
   return (
     <nav className="navbar-container">
-      <div className="logo"><img src="./images/logo.png"/></div>
-      <NavLink className="link" style={{ textDecoration: "none" }} exact to="/">
+      <div className="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </div>
+      <Link className="link" to="/">
         Home
-      </NavLink>
-      <NavLink className="link" style={{ textDecoration: "none" }} to="/about">
+      </Link>
+      <Link className="link" to="/about">
         About
-      </NavLink>
-      <NavLink className="link" style={{ textDecoration: "none" }} to="/menu">
+      </Link>
+      <Link className="link" to="/menu">
         Menu
-      </NavLink>
-      <NavLink
-        className="link"
-        style={{ textDecoration: "none" }}
-        to="/rewards"
-      >
+      </Link>
+      <Link className="link" to="/rewards">
         Rewards
-      </NavLink>
-      <NavLink className="link" style={{ textDecoration: "none" }} to="/deals">
+      </Link>
+      <Link className="link" to="/deals">
         Deals
-      </NavLink>
-      <NavLink className="link" style={{ textDecoration: "none" }} to="/brands">
+      </Link>
+      <Link className="link" to="/brands">
         Brands
-      </NavLink>
+      </Link>
       <div className="icon">
-        <img src="./images/search.png" />
+        <img src="./images/search.png" alt="search" />
       </div>
       <div className="login">
-      <a style={{ textDecoration: "none" }} href="/login">
-          Login
-        </a>
+        <a href="/login">Login</a>
       </div>
       <div>
-        <a style={{ textDecoration: "none" }} href="/signup">
+        <a href="/signup">
           <button className="signup">Sign up</button>
         </a>
       </div>
       <div className="line"></div>
-      <button className="cart" >
-      <img src="./images/cart.png" />
+      <button className="cart">
+        <img src="./images/cart.png" alt="cart" />
       </button>
-     
     </nav>
   );
 }
+
+export default NavBar;

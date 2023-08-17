@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 
 export function Footer() {
@@ -8,29 +7,19 @@ export function Footer() {
         <div className="box1">
           <ul>
             <li className="heading">
-              <a style={{ textDecoration: "none" }} href="/Address">
-                Shop Name
-              </a>
+              <a href="/Address">Shop Name</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/home">
-                Home
-              </a>
+              <a href="/home">Home</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/menu">
-                Menu
-              </a>
+              <a href="/menu">Menu</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/shop details">
-                Shop Info
-              </a>
+              <a href="/shop details">Shop Info</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/blog">
-                Blog
-              </a>
+              <a href="/blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -38,24 +27,16 @@ export function Footer() {
         <div className="box2">
           <ul>
             <li className="heading">
-              <a style={{ textDecoration: "none" }} href="/help">
-                Customer Service
-              </a>
+              <a href="/help">Customer Service</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/contact us">
-                Contact Us
-              </a>
+              <a href="/contact us">Contact Us</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/privacy policy">
-                Privacy Policy
-              </a>
+              <a href="/privacy policy">Privacy Policy</a>
             </li>
             <li>
-              <a style={{ textDecoration: "none" }} href="/terms of service">
-                Terms of Service
-              </a>
+              <a href="/terms of service">Terms of Service</a>
             </li>
           </ul>
         </div>
@@ -64,11 +45,7 @@ export function Footer() {
           <h1>Newsletter Subscription</h1>
           <p>Be the first to know about exclusive deals.</p>
           <form className="form">
-            {/* <input className="input" type="text" >
-            </input> */}
-
-<input className="input" type="text" name="email" rel="email" />
-            
+            <input className="input" type="text" name="email" rel="email" />
             <button className="btn" type="submit">
               SUBMIT
             </button>
@@ -76,15 +53,15 @@ export function Footer() {
         </div>
       </div>
       <div className="box4">
-        <div className="foot">© King’s Crew 2020  |  License #: C10-00000026-LIC  </div>
-  <div className="icons">
-  Follow Us:
-  <img src="./images/icon1.png"/>
-  <img src="./images/icon2.png"/>
-  <img src="./images/icon3.png"/>
-  </div>
-
-
+        <div className="foot">
+          © King’s Crew 2020 | License #: C10-00000026-LIC{" "}
+        </div>
+        <div className="icons">
+          Follow Us:
+          <img src="./images/icon1.png" alt="Facebook" />
+          <img src="./images/icon2.png" alt="Instagram" />
+          <img src="./images/icon3.png" alt="Twitter" />
+        </div>
       </div>
     </div>
   );
