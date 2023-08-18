@@ -1,0 +1,98 @@
+.category-wrapper {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  top: 100px;
+  left: 70px;
+}
+
+.pre-roll-header {
+  margin-top: 50px;
+}
+
+.pre-roll-header h3 {
+  color: #211e1e;
+  font-family: SF Pro Text;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 1.296px;
+}
+
+.view-category {
+  color: #211e1e;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  margin-top: 14px;
+}
+
+.btn-preroll {
+  width: 155px;
+  height: 43px;
+  border-radius: 6px;
+  border: 1.5px solid #227840;
+  background: #227840;
+  color: #fff;
+  font-family: SF UI Text;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.275px;
+  display: block;
+  margin-top: 23px;
+  text-align: center;
+  padding-top: 14px;
+}
+
+/* Cards */
+
+.product-wrapper {
+  width: 1006px;
+  height: 344px;
+  display: flex;
+  gap: 26.11px;
+}
+
+.category-card {
+  width: 231.885px;
+  height: 231.885px;
+  border: 1px solid #f9f9f9;
+  background: #fff;
+  text-align: center;
+}
+
+/* .category-card::before {
+  width: 4px;
+  height: 36px;
+  background-color: #f5a623;
+} */
+
+.category-card img {
+  width: 181.917px;
+  height: 183.478px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.product-name {
+  color: #111;
+  font-family: SF UI Text;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.325px;
+  /* margin-top: 58px; */
+  position: relative;
+  top: 70px;
+  text-align: left;
+}
+
+.product-price {
+  color: #211e1e;
+  font-family: SF Pro Text;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  position: relative;
+  top: 70px;
+  text-align: left;
+}

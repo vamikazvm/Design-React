@@ -9,13 +9,15 @@ import { Rewards } from "./components/pages/Rewards";
 import { Footer } from "./Footer";
 import NavBar from "./NavBar";
 import Slider from "./Slider";
+import Swiper from "./Swiper";
 
 export function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
-        <Slider/>
+        <Slider />
+        <Swiper />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
