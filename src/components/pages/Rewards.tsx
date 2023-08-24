@@ -1,3 +1,3 @@
-export function Rewards() {
+export function Reward() {
   return <h1>Rewards</h1>;
 }
