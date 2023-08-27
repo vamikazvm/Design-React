@@ -1,0 +1,102 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  margin-top: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.NavbarContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  gap: 40px;
+}
+
+.link {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #211e1e;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15.51px;
+  letter-spacing: 0.93px;
+  position: relative;
+  top: 35px;
+  left: 237px;
+}
+
+.logo {
+  width: 152px;
+  height: 84px;
+  position: relative;
+  top: 35px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 35px;
+  left: 300px;
+  border: 1px;
+  opacity: 0.7px;
+}
+
+.login {
+  width: 36px;
+  height: 16px;
+  position: relative;
+  top: 35px;
+  left: 300px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15.51px;
+  letter-spacing: 0.17px;
+  color: #211e1e;
+}
+
+.signup {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.15px;
+  text-align: center;
+  position: relative;
+  top: 35px;
+  left: 300px;
+  color: #fff;
+}
+button {
+  width: 78px;
+  height: 40px;
+  border-radius: 10px;
+  background: #211e1e4d;
+  border: none;
+}
+.line {
+  width: 1px;
+  height: 30px;
+  border: 1px;
+  opacity: 0.56px;
+  background: #d8d8d8;
+  border: 1px solid #d8d8d8;
+  position: relative;
+  top: 35px;
+  left: 280px;
+}
+
+.cart {
+  width: 48px;
+  height: 40px;
+  position: relative;
+  top: 35px;
+  left: 260px;
+  background: #227840;
+}

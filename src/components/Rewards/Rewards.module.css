@@ -1,0 +1,106 @@
+.main-rewards {
+  height: 603px;
+  width: 1264px;
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+
+.rewards-container {
+  width: 432px;
+  height: 136px;
+  flex-shrink: 0;
+  position: relative;
+  left: 390px;
+}
+.rewards-container h1 {
+  color: #211e1e;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 1.296px;
+}
+.rewards-container h6 {
+  color: #211e1e;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  opacity: 0.6973;
+  margin-top: 14px;
+}
+.reward-btn {
+  width: 155px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1.5px solid #227840;
+  background: #227840;
+  border-radius: 6px;
+  border: 1.5px solid #227840;
+  background: #227840;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.275px;
+  margin-top: 23px;
+  margin-left: 130px;
+}
+.rewards {
+  width: 1264px;
+  /* height: 312px; */
+  display: flex;
+  gap: 26.11px;
+}
+.reward {
+  width: 231.885px;
+  height: 231.885px;
+  flex-shrink: 0;
+  border: 1px solid #f9f9f9;
+  background: #fff;
+  text-align: center;
+  padding-top: 22px;
+}
+
+.reward-text {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.reward img {
+  width: 181.917px;
+  height: 183.478px;
+}
+.reward h6 {
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.275px;
+  opacity: 0.6;
+}
+.reward h1 {
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.325px;
+}
+.points h6 {
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  opacity: 0.5524;
+}
+.points img {
+  width: 11.774px;
+  height: 10.902px;
+  position: relative;
+  bottom: 16px;
+  left: 35px;
+}

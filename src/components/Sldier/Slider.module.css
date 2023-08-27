@@ -1,0 +1,23 @@
+.SlideContainer.carousel {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  width: 1351px;
+}
+
+.carousel .thumbs {
+  display: none !important;
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: #227840 !important;
+}
+
+.category-wrapper {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  top: 120px;
+  left: 60px;
+  margin-top: 38px;
+}

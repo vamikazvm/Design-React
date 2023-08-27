@@ -1,18 +1,22 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import "./index.css";
+import styles from "./Slider.module.css";
+import image from "./img.png";
+
 
 const Slider = () => {
+
+
   return <div>
-          <Carousel className="slide-container">
+          <Carousel className={styles.SlideContainer}>
                 <div>
-                    <img src="./images/img.png" alt="img1" />
+                <img src={image} alt="img"/>
                 </div>
                 <div>
-                    <img src="./images/img.png" alt="img2"/>
+                <img src={image} alt="img"/>
                 </div>
                 <div>
-                    <img src="./images/img.png" alt="img3"/>
+                    <img src={image} alt="img"/>
                 </div>
             </Carousel>
   </div>;

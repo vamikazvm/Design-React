@@ -1,0 +1,52 @@
+.section-wrapper {
+  width: 1290px;
+  height: 551px;
+  position: relative;
+  left: 36px;
+  top: 64px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.section-wrapper img {
+  width: 414px;
+  height: 414px;
+  flex-shrink: 0;
+}
+.section-wrapper h1 {
+  color: #211e1e;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.786px;
+  margin-top: 15px;
+}
+.view-all {
+  color: #211e1e;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.55px;
+  opacity: 0.6973;
+  margin-top: 15px;
+}
+.section-btn {
+  width: 206px;
+  height: 43px;
+  margin-top: 18px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1.5px solid #227840;
+  background: #227840;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.275px;
+}

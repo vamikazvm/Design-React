@@ -1,0 +1,84 @@
+.PrerollHeader{
+  margin-top: 50px;
+}
+
+.PrerollHeader h3 {
+  color: #211e1e;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: 1.296px;
+}
+
+.ViewCategory {
+  color: #211e1e;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  margin-top: 14px;
+}
+
+.BtnPreroll {
+  width: 155px;
+  height: 43px;
+  border-radius: 6px;
+  border: 1.5px solid #227840;
+  background: #227840;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.275px;
+  display: block;
+  margin-top: 23px;
+  text-align: center;
+  padding-top: 12px;
+}
+/* Cards */
+
+.ProductWrapper {
+  width: 1006px;
+  height: 344px;
+  display: flex;
+  gap: 26.11px;
+}
+
+.CategoryCard {
+  width: 231.885px;
+  height: 231.885px;
+  border: 1px solid #f9f9f9;
+  background: #fff;
+  text-align: center;
+}
+
+
+
+.CategoryCardimg {
+  width: 181.917px;
+  height: 183.478px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.ProductName {
+  color: #111;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.325px;
+  position: relative;
+  top: 46px;
+  text-align: left;
+}
+
+.ProductPrice {
+  color: #211e1e;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  position: relative;
+  top: 46px;
+  text-align: left;
+}
