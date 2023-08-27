@@ -1,8 +1,6 @@
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Product } from "../Product/Product";
-
 
 const Swiper = () => {
   const responsive = {
@@ -13,7 +11,7 @@ const Swiper = () => {
   };
   return (
     <>
-      <Product/>
+      <Product category="Preroll" />
       <Carousel responsive={responsive} className="swiper-container">
         {/* <div> */}
         <div className="swiper-products">
