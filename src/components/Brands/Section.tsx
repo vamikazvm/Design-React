@@ -1,29 +1,26 @@
+import { FC } from "react";
+import styles from "./Section.module.css";
+import img1 from "./images/img1.png";
+import img2 from "./images/img3.png";
+import img3 from "./images/img3.png";
 
-const Section = () => {
+const Section: FC = () => {
+  const data = [
+    { brandName: "Kiva Confections", image: img1 },
+    { brandName: "Bloom Farms", image: img2 },
+    { brandName: "Korova", image: img3 },
+  ];
   return (
-    <div className="section-wrapper">
-      <div className="section1">
-        <img src="./images/img1.png" alt="" />
-        <h1>Kiva Confections</h1>
-        <div className="view-all">View All 9 items</div>
-        <button className="section-btn">SHOP KIVA CONFECTIONS</button>
-      </div>
-
-      <div className="section-2">
-        <img src="./images/img2.png" alt="" />
-        <h1>Bloom Farms</h1>
-        <div className="view-all">View All 9 items</div>
-        <button className="section-btn">SHOP BLOOM FARMS</button>
-      </div>
-
-      <div className="section-3">
-        <img src="./images/img3.png" alt="" />
-        <h1>Korova</h1>
-        <div className="view-all">View All 9 items</div>
-        <button className="section-btn">SHOP KOROVA</button>
+    <div className={styles.SectionWrapper}>
+      <div className={styles.brandName}>
+        {data.map((p) => (
+          <>
+            <img src={p.image} alt="brand" />
+            <div className={styles.brandName}>{p.brandName}</div>
+          </>
+        ))}
       </div>
     </div>
   );
 };
-
 export default Section;

@@ -1,54 +1,58 @@
-import styles from "./Blog.module.css"
-const Blog = () => {
+import { FC } from "react";
+import styles from "./Blog.module.css";
+import image1 from "./images/image1.png";
+import image2 from "./images/image2.png";
+import image3 from "./images/image3.png";
+import image4 from "./images/image4.png";
+
+const Blog: FC = () => {
+  const data = [
+    {
+      contentText: "Papa & Barkley back in stock along with many options!",
+      image: image1,
+      btnContent: "Read More",
+    },
+    {
+      contentText: "Papa & Barkley back in stock along with many options!",
+      image: image2,
+      btnContent: "Read More",
+    },
+    {
+      contentText: "Papa & Barkley back in stock along with many options!",
+      image: image3,
+      btnContent: "Read More",
+    },
+    {
+      contentText: "Papa & Barkley back in stock along with many options!",
+      image: image4,
+      btnContent: "Read More",
+    },
+  ];
   return (
     <>
-      <div className="container-blog">
-        <div className="blog">
-          <header className="header-section">
+      <div className={styles.ContainerBlog}>
+        <div className={styles.Blog}>
+          <header className={styles.HeaderSection}>
             <h1>Blog</h1>
-            <p className="header-text">Insert Blog short bio copy</p>
+            <p className={styles.HeaderText}>Insert Blog short bio copy</p>
           </header>
-          <div className="column">
-            <div className="blog-column">
-              <img
-                src="images/image1.png"
-                alt="image1"
-                className="content-img"
-              />
-              <div className="content-text">
-                <p>Papa & Barkley back in stock along with many options!</p>
-                <button className="primary-btn">Read More</button>
+          <div className={styles.Column}>
+            {data.map((d) => (
+              <div className={styles.BlogColumn}>
+                <img
+                  src={d.image}
+                  alt="image"
+                  className={styles.ContentImage}
+                />
+                <div className={styles.ContentText}>
+                  <p>{d.contentText}</p>
+                  <button className={styles.PrimaryBtn}>{d.btnContent}</button>
+                </div>
               </div>
-            </div>
-            <div className="blog-column">
-              <div className="content-img">
-                <img src="images/image2.png" alt="image2" />
-              </div>
-              <div className="content-text">
-                <p>Papa & Barkley back in stock along with many options!</p>
-                <button className="primary-btn">Read More</button>
-              </div>
-            </div>
-            <div className="blog-column">
-              <div className="content-img">
-                <img src="images/image3.png" alt="image3" />
-              </div>
-              <div className="content-text">
-                <p>Papa & Barkley back in stock along with many options!</p>
-                <button className="primary-btn">Read More</button>
-              </div>
-            </div>
-            <div className="blog-column">
-              <div className="content-img">
-                <img src="images/image4.png" alt="image4" />
-              </div>
-              <div className="content-text">
-                <p>Papa & Barkley back in stock along with many options!</p>
-                <button className="primary-btn">Read More</button>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="secondary-btn">
+
+          <div className={styles.SecondaryBtn}>
             <button>View More</button>
           </div>
         </div>
@@ -56,5 +60,4 @@ const Blog = () => {
     </>
   );
 };
-
 export default Blog;

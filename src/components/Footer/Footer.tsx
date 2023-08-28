@@ -1,11 +1,17 @@
+import { FC } from "react";
+import styles from "./Footer.module.css";
 
-export function Footer() {
+import iconFacebook from "./images/icon1.png";
+import iconInstagram from "./images/icon2.png";
+import iconTwitter from "./images/icon3.png";
+
+export const Footer: FC = () => {
   return (
-    <div className="footer">
-      <div className="footer-container">
-        <div className="box1">
+    <div className={styles.Footer}>
+      <div className={styles.FooterContainer}>
+        <div className={styles.Box1}>
           <ul>
-            <li className="heading">
+            <li className={styles.Heading}>
               <a href="/Address">Shop Name</a>
             </li>
             <li>
@@ -22,10 +28,9 @@ export function Footer() {
             </li>
           </ul>
         </div>
-
-        <div className="box2">
+        <div className={styles.Box2}>
           <ul>
-            <li className="heading">
+            <li className={styles.Heading}>
               <a href="/help">Customer Service</a>
             </li>
             <li>
@@ -39,29 +44,32 @@ export function Footer() {
             </li>
           </ul>
         </div>
-
-        <div className="box3">
+        <div className={styles.Box3}>
           <h1>Newsletter Subscription</h1>
           <p>Be the first to know about exclusive deals.</p>
-          <form className="form">
-            <input className="input" type="text" name="email" rel="email" />
-            <button className="btn" type="submit">
+          <form className={styles.Form}>
+            <input
+              className={styles.Input}
+              type="text"
+              name="email"
+              rel="email"
+            />
+            <button className={styles.Btn} type="submit">
               SUBMIT
             </button>
           </form>
         </div>
       </div>
-      <div className="box4">
-        <div className="foot">
-          © King’s Crew 2020 | License #: C10-00000026-LIC{" "}
+      <div className={styles.Box4}>
+        <div className={styles.Foot}>
+          © King’s Crew 2020 | License #: C10-00000026-LIC
         </div>
-        <div className="icons">
-          Follow Us:
-          <img src="./images/icon1.png" alt="Facebook" />
-          <img src="./images/icon2.png" alt="Instagram" />
-          <img src="./images/icon3.png" alt="Twitter" />
+        <div className={styles.Icons}>
+          Follow Us: <img src={iconFacebook} alt="Facebook" />
+          <img src={iconInstagram} alt="Instagram" />
+          <img src={iconTwitter} alt="Twitter" />
         </div>
       </div>
     </div>
   );
-}
+};

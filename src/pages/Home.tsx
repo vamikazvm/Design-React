@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../components/Header/NavBar";
-import Slider from "../components/Sldier/Slider";
+import Slider from "../components/Slider/Slider";
 import Swiper from "../components/Swiper/Swiper";
 import Deals from "../components/Deals/Deals";
 import Section from "../components/Brands/Section";

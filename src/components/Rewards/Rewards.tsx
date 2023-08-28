@@ -1,72 +1,70 @@
+import { FC } from "react";
+import styles from "./Rewards.module.css";
 
-const Rewards = () => {
+import image1 from "./images/image1.png";
+import image2 from "./images/image2.png";
+import image3 from "./images/image3.png";
+import image4 from "./images/image4.png";
+import imgPoint from "./images/point.png";
+
+const Rewards: FC = () => {
+  const rewards = [
+    {
+      RewardName: "Reward",
+      ProductName: "Strawberry Banana",
+      Points: "300",
+      image: image1,
+      ImgPoint: imgPoint,
+    },
+
+    {
+      RewardName: "Reward",
+      ProductName: "Milk Chocolate Bar 100mg",
+      Points: "300",
+      image: image2,
+      ImgPoint: imgPoint,
+    },
+
+    {
+      RewardName: "Dosist",
+      ProductName: "Relief pen - 100 doses",
+      Points: "300",
+      image: image3,
+      ImgPoint: imgPoint,
+    },
+
+    {
+      RewardName: "Dosist",
+      ProductName: "Relief pen - 100 doses",
+      Points: "300",
+      image: image4,
+      ImgPoint: imgPoint,
+    },
+  ];
+
   return (
-    <div className="main-rewards">
-      <div className="rewards-container">
+    <div className={styles.MainRewards}>
+      <div className={styles.RewardsContainer}>
         <h1>Rewards</h1>
         <h6>Earn points with each order and be rewarded for your loyalty</h6>
-        <button className="reward-btn">SHOP REWARDS</button>
+        <button className={styles.RewardBtn}>SHOP REWARDS</button>
       </div>
 
-      <div className="rewards">
-        <div className="reward">
-          <img src="./images/image1.png" alt="" />
-          <div className="reward-text">
-            <h6>Reward</h6>
-            <h1>Strawberry Banana</h1>
-            <div className="points">
-              <h6>300</h6>
-              <img src="./images/point.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div className="reward">
-          <img src="./images/image2.png" alt="" />
-          <div className="reward-text">
-            <h6>Reward</h6>
-            <h1>Milk Chocolate Bar 100mg</h1>
-            <div className="points">
-              <h6>300</h6>
-              <img src="./images/point.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div className="reward">
-          <img src="./images/image3.png" alt="" />
-          <div className="reward-text">
-            <h6>Dosist</h6>
-            <h1>Relief pen - 100 doses</h1>
-            <div className="points">
-              <h6>300</h6>
-              <img src="./images/point.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div className="reward">
-          <img src="./images/image3.png" alt="" />
-          <div className="reward-text">
-            <h6>Dosist</h6>
-            <h1>Relief pen - 100 doses</h1>
-            <div className="points">
-              <h6>300</h6>
-              <img src="./images/point.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div className="reward">
-          <img src="./images/image3.png" alt="" />
-          <div className="reward-text">
-            <h6>Dosist</h6>
-            <h1>Relief pen - 100 doses</h1>
-            <div className="points">
-              <h6>300</h6>
-              <img src="./images/point.png" alt="" />
-            </div>
-          </div>
+      <div className={styles.Rewards}>
+        <div className={styles.Reward}>
+          {rewards.map((r) => (
+            <>
+              <img src={r.image} alt="" />
+              <div className={styles.RewardText}>
+                <h6>{r.RewardName}</h6>
+                <h1>{r.ProductName}</h1>
+                <div className={styles.points}>
+                  <h6>{r.Points}</h6>
+                  <img src={r.ImgPoint} alt="" />
+                </div>
+              </div>
+            </>
+          ))}
         </div>
       </div>
     </div>

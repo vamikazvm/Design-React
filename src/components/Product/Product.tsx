@@ -51,7 +51,7 @@ export const Product: FC<Iproducts> = ({ category }) => {
           <div className={styles.PrerollHeader}>
             <h3>{category}</h3>
             <a href="#" className={styles.ViewCategory}>
-              View All 9 items{" "}
+              View All 9 items
             </a>
             <a href="#" className={styles.BtnPreroll}>
               SHOP {category}

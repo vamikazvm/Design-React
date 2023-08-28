@@ -1,54 +1,73 @@
+import { FC } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Product } from "../Product/Product";
+import styles from "./Swiper.module.css";
 
-const Swiper = () => {
+import product1 from "./images/product1.png";
+import product2 from "./images/product2.png";
+import product3 from "./images/product3.png";
+import product4 from "./images/product4.png";
+import product5 from "./images/product5.png";
+import product6 from "./images/product6.png";
+import product7 from "./images/product7.png";
+
+const Swiper: FC = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 4,
     },
   };
+
+  const products = [
+    {
+      imgProduct: product1,
+      ProductName: "Flower",
+    },
+
+    {
+      imgProduct: product2,
+      ProductName: "PRE-ROLLS",
+    },
+
+    {
+      imgProduct: product3,
+      ProductName: "Vaporizers",
+    },
+
+    {
+      imgProduct: product4,
+      ProductName: "CONCENTRATES",
+    },
+
+    {
+      imgProduct: product5,
+      ProductName: "EDIBLES",
+    },
+
+    {
+      imgProduct: product6,
+      ProductName: "Capsules / Tablets",
+    },
+
+    {
+      imgProduct: product7,
+      ProductName: "Tinctures",
+    },
+  ];
   return (
     <>
       <Product category="Preroll" />
-      <Carousel responsive={responsive} className="swiper-container">
-        {/* <div> */}
-        <div className="swiper-products">
-          <img src=".\images\product1.png" alt="product" />
-          <div className="prod-name">Flower</div>
+      <Carousel responsive={responsive} className={styles.SwiperContainer}>
+        <div className={styles.SwiperProducts}>
+          {products.map((p) => (
+            <>
+              <img src={p.imgProduct} alt="product" />
+              <div className={styles.ProdName}>{p.ProductName}</div>
+            </>
+          ))}
         </div>
-
-        <div className="swiper-products">
-          <img src=".\images\product2.png" alt="product" />
-          <div className="prod-name">PRE-ROLLS</div>
-        </div>
-
-        <div className="swiper-products">
-          <img src=".\images\product3.png" alt="product" />
-          <div className="prod-name">Vaporizers</div>
-        </div>
-
-        <div className="swiper-products">
-          <img src=".\images\product4.png" alt="product" />
-          <div className="prod-name">CONCENTRATES</div>
-        </div>
-
-        <div className="swiper-products">
-          <img src=".\images\product5.png" alt="product" />
-          <div className="prod-name">EDIBLES </div>
-        </div>
-
-        <div className="swiper-products">
-          <img src=".\images\product6.png" alt="product" />
-          <div className="prod-name">Capsules / Tablets</div>
-        </div>
-
-        <div className="swiper-products">
-          <img src=".\images\product7.png" alt="product" />
-          <div className="prod-name">Tinctures</div>
-        </div>
-        {/* </div> */}
       </Carousel>
     </>
   );

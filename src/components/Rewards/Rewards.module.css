@@ -1,19 +1,19 @@
-.main-rewards {
+.MainRewards {
   height: 603px;
-  width: 1264px;
+  width: 100%;
   position: relative;
   top: 200px;
   left: 50px;
 }
 
-.rewards-container {
+.RewardsContainer {
   width: 432px;
   height: 136px;
   flex-shrink: 0;
   position: relative;
   left: 390px;
 }
-.rewards-container h1 {
+.RewardsContainer h1 {
   color: #211e1e;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -21,7 +21,7 @@
   font-weight: 700;
   letter-spacing: 1.296px;
 }
-.rewards-container h6 {
+.RewardsContainer h6 {
   color: #211e1e;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -31,7 +31,7 @@
   opacity: 0.6973;
   margin-top: 14px;
 }
-.reward-btn {
+.RewardBtn {
   width: 155px;
   height: 43px;
   flex-shrink: 0;
@@ -49,13 +49,13 @@
   margin-top: 23px;
   margin-left: 130px;
 }
-.rewards {
+.Rewards {
   width: 1264px;
   /* height: 312px; */
   display: flex;
   gap: 26.11px;
 }
-.reward {
+.Reward {
   width: 231.885px;
   height: 231.885px;
   flex-shrink: 0;
@@ -65,16 +65,16 @@
   padding-top: 22px;
 }
 
-.reward-text {
+.RewardText {
   margin-top: 30px;
   text-align: left;
 }
 
-.reward img {
+.Reward img {
   width: 181.917px;
   height: 183.478px;
 }
-.reward h6 {
+.Reward h6 {
   color: #111;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 11px;
@@ -82,7 +82,7 @@
   letter-spacing: 0.275px;
   opacity: 0.6;
 }
-.reward h1 {
+.Reward h1 {
   color: #111;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 13px;
