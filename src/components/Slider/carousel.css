@@ -1,0 +1,12 @@
+.SlideContainer.carousel {
+  text-align: center;
+  position: relative;
+}
+
+.carousel .thumb {
+  display: none !important;
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: #227840 !important;
+}

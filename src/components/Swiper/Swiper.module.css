@@ -5,9 +5,7 @@
   height: 121px;
   display: flex;
   gap: 65px;
-  position: relative;
-  left: 220px;
-  top: 80px;
+  margin-left: 200px;
 }
 .SwiperProducts {
   display: inline-block;

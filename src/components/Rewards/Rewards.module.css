@@ -1,9 +1,7 @@
 .MainRewards {
-  height: 603px;
+  height: 500px;
   width: 100%;
-  position: relative;
-  top: 200px;
-  left: 50px;
+  margin: 38px 10px 0px 10px;
 }
 
 .RewardsContainer {
@@ -50,15 +48,14 @@
   margin-left: 130px;
 }
 .Rewards {
-  width: 1264px;
-  /* height: 312px; */
+  width: 100%;
+  height: 312px;
   display: flex;
   gap: 26.11px;
 }
 .Reward {
-  width: 231.885px;
+  width: 25%;
   height: 231.885px;
-  flex-shrink: 0;
   border: 1px solid #f9f9f9;
   background: #fff;
   text-align: center;

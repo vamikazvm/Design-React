@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./Section.module.css";
 import img1 from "./images/img1.png";
-import img2 from "./images/img3.png";
+import img2 from "./images/img2.png";
 import img3 from "./images/img3.png";
 
 const Section: FC = () => {
@@ -12,14 +12,12 @@ const Section: FC = () => {
   ];
   return (
     <div className={styles.SectionWrapper}>
-      <div className={styles.brandName}>
-        {data.map((p) => (
-          <>
-            <img src={p.image} alt="brand" />
-            <div className={styles.brandName}>{p.brandName}</div>
-          </>
-        ))}
-      </div>
+      {data.map((p) => (
+        <div className={styles.brandName}>
+          <img src={p.image} alt="brand" />
+          <div className={styles.brandName}>{p.brandName}</div>
+        </div>
+      ))}
     </div>
   );
 };

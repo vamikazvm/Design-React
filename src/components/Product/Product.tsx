@@ -58,19 +58,17 @@ export const Product: FC<Iproducts> = ({ category }) => {
             </a>
           </div>
           <div className={styles.ProductWrapper}>
-            <div className={styles.CategoryCard}>
-              {data.map((p) => (
-                <>
-                  <img src={p.image} alt="product" />
-                  <div className={styles.ProductName}>{p.productName}</div>
-                  <div className={styles.ProductPrice}>
-                    {p.maxPrice
-                      ? `${p.minPrice} - ${p.maxPrice}`
-                      : `${p.minPrice}`}
-                  </div>
-                </>
-              ))}
-            </div>
+            {data.map((p) => (
+              <div className={styles.CategoryCard}>
+                <img src={p.image} alt="product" />
+                <div className={styles.ProductName}>{p.productName}</div>
+                <div className={styles.ProductPrice}>
+                  {p.maxPrice
+                    ? `${p.minPrice} - ${p.maxPrice}`
+                    : `${p.minPrice}`}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </>

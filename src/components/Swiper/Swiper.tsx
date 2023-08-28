@@ -60,14 +60,12 @@ const Swiper: FC = () => {
     <>
       <Product category="Preroll" />
       <Carousel responsive={responsive} className={styles.SwiperContainer}>
-        <div className={styles.SwiperProducts}>
-          {products.map((p) => (
-            <>
-              <img src={p.imgProduct} alt="product" />
-              <div className={styles.ProdName}>{p.ProductName}</div>
-            </>
-          ))}
-        </div>
+        {products.map((p) => (
+          <div className={styles.SwiperProducts}>
+            <img src={p.imgProduct} alt="product" />
+            <div className={styles.ProdName}>{p.ProductName}</div>
+          </div>
+        ))}
       </Carousel>
     </>
   );

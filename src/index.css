@@ -1,17 +1,11 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 body {
+  border: 2px solid red;
   width: 100%;
-  margin-top: 1px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-
-
-
-

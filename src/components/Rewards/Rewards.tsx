@@ -51,21 +51,19 @@ const Rewards: FC = () => {
       </div>
 
       <div className={styles.Rewards}>
-        <div className={styles.Reward}>
-          {rewards.map((r) => (
-            <>
-              <img src={r.image} alt="" />
-              <div className={styles.RewardText}>
-                <h6>{r.RewardName}</h6>
-                <h1>{r.ProductName}</h1>
-                <div className={styles.points}>
-                  <h6>{r.Points}</h6>
-                  <img src={r.ImgPoint} alt="" />
-                </div>
+        {rewards.map((r) => (
+          <div className={styles.Reward}>
+            <img src={r.image} alt="" />
+            <div className={styles.RewardText}>
+              <h6>{r.RewardName}</h6>
+              <h1>{r.ProductName}</h1>
+              <div className={styles.points}>
+                <h6>{r.Points}</h6>
+                <img src={r.ImgPoint} alt="" />
               </div>
-            </>
-          ))}
-        </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
