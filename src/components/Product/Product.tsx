@@ -21,27 +21,31 @@ export const Product: FC<Iproducts> = ({ category }) => {
       minPrice: "36",
       maxPrice: "55",
       image: image1,
+     
     },
 
     {
       productName: "Milk Chocolate Bar 100mg",
       minPrice: "15",
-      maxPrice: " ",
+      maxPrice: "55",
       image: image2,
+    
     },
 
     {
       productName: "Relief pen - 100 doses",
       minPrice: "54",
-      maxPrice: " ",
+      maxPrice: "55",
       image: image3,
+     
     },
 
     {
       productName: "Hybrid Top Shelf 3.5 grams",
       minPrice: "49",
-      maxPrice: " ",
+      maxPrice: "55",
       image: image4,
+      
     },
   ];
   return (
@@ -59,13 +63,17 @@ export const Product: FC<Iproducts> = ({ category }) => {
           </div>
           <div className={styles.ProductWrapper}>
             {data.map((p) => (
-              <div className={styles.CategoryCard}>
+              <div className={styles.CategoryCard} key={p.productName}>
                 <img src={p.image} alt="product" />
                 <div className={styles.ProductName}>{p.productName}</div>
                 <div className={styles.ProductPrice}>
-                  {p.maxPrice
-                    ? `${p.minPrice} - ${p.maxPrice}`
-                    : `${p.minPrice}`}
+
+                  {p.maxPrice !==undefined
+                    ? `$${p.minPrice} - $${p.maxPrice}`
+                    : (
+                    `${p.minPrice}`
+                    )}
+
                 </div>
               </div>
             ))}

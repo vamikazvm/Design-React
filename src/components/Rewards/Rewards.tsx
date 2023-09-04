@@ -15,6 +15,7 @@ const Rewards: FC = () => {
       Points: "300",
       image: image1,
       ImgPoint: imgPoint,
+      id: "10",
     },
 
     {
@@ -23,6 +24,7 @@ const Rewards: FC = () => {
       Points: "300",
       image: image2,
       ImgPoint: imgPoint,
+      id: "11",
     },
 
     {
@@ -31,6 +33,7 @@ const Rewards: FC = () => {
       Points: "300",
       image: image3,
       ImgPoint: imgPoint,
+      id: "12",
     },
 
     {
@@ -39,6 +42,7 @@ const Rewards: FC = () => {
       Points: "300",
       image: image4,
       ImgPoint: imgPoint,
+      id: "13",
     },
   ];
 
@@ -52,7 +56,7 @@ const Rewards: FC = () => {
 
       <div className={styles.Rewards}>
         {rewards.map((r) => (
-          <div className={styles.Reward}>
+          <div className={styles.Reward} key={r.id}>
             <img src={r.image} alt="" />
             <div className={styles.RewardText}>
               <h6>{r.RewardName}</h6>

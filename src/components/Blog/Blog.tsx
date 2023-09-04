@@ -38,7 +38,7 @@ const Blog: FC = () => {
           </header>
           <div className={styles.Column}>
             {data.map((d) => (
-              <div className={styles.BlogColumn}>
+              <div className={styles.BlogColumn} key={d.image}>
                 <img
                   src={d.image}
                   alt="image"

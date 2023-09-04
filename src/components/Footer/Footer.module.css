@@ -98,7 +98,7 @@ p {
   height: 18px;
   margin-top: 33px;
   position: relative;
-  right: 135px;
+  /* right: 135px; */
   display: flex;
   justify-content: space-between;
   font-size: 14px;

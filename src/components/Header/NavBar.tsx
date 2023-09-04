@@ -9,9 +9,12 @@ import searchImg from "./images/search.png";
 const NavBar: FC = () => {
   return (
     <nav className={styles.NavbarContainer}>
-      <div className={styles.logo}>
-        <img src={logo} alt="logo" />
+      <div className={styles.LogoContainer}>
+        <div className={styles.logo}>
+          <img src={logo} alt="logo" />
+        </div>
       </div>
+      <div className={styles.LinkContainer}>
       <Link className={styles.link} to="/">
         Home
       </Link>
@@ -30,6 +33,9 @@ const NavBar: FC = () => {
       <Link className={styles.link} to="/brands">
         Brands
       </Link>
+      </div>
+
+      <div className={styles.IconContainer}>
       <div className={styles.icon}>
         <img src={searchImg} alt="search" />
       </div>
@@ -45,6 +51,8 @@ const NavBar: FC = () => {
       <button className={styles.cart}>
         <img src={cartImg} alt="cart" />
       </button>
+    </div>
+
     </nav>
   );
 };

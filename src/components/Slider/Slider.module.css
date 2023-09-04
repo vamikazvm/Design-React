@@ -1,6 +1,6 @@
 .SlideContainer.carousel {
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .carousel .thumb {

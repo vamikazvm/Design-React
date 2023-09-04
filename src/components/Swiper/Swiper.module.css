@@ -1,11 +1,11 @@
 /* Swiper */
 
 .SwiperContainer {
-  width: 1484px;
+  width: 100%;
   height: 121px;
   display: flex;
   gap: 65px;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
 .SwiperProducts {
   display: inline-block;

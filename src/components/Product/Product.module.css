@@ -1,13 +1,11 @@
 .CategoryWrapper {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 50px;
-  margin: 20px 10px 20px 10px;
 }
 
-/* .PrerollHeader {
-  margin-top: 50px;
-} */
 
 .PrerollHeader h3 {
   color: #211e1e;
@@ -55,7 +53,7 @@
 }
 
 .CategoryCard {
-  width: 231.885px;
+  width: 25%;
   height: 231.885px;
   border: 1px solid #f9f9f9;
   background: #fff;
@@ -76,7 +74,6 @@
   font-weight: 700;
   letter-spacing: 0.325px;
   margin-top: 32px;
-  text-align: left;
 }
 
 .ProductPrice {
@@ -85,5 +82,4 @@
   font-size: 16px;
   font-weight: 700;
   margin-top: 10px;
-  text-align: left;
 }
