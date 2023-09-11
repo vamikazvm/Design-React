@@ -1,13 +1,13 @@
  import './index.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
-import { Menu } from "./pages/Menu";
-import { Reward } from "./pages/Rewards";
-import { Deal } from "./pages/Deals";
-import { Brands } from "./pages/Brands";
+// import { Home } from "./pages/Home";
+// import { About } from "./pages/About";
+// import { Menu } from "./pages/Menu";
+// import { Reward } from "./pages/Rewards";
+// import { Deal } from "./pages/Deals";
+// import { Brands } from "./pages/Brands";
 import { Footer } from "./components/Footer/Footer";
-
+import Aroutes  from "./components/Routes/Navigation";
 
 
 export function App() {
@@ -16,12 +16,15 @@ export function App() {
       <BrowserRouter>
       
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {Aroutes.map((r,index)=> (
+            <Route path={r.path}element={r.element} />
+          )) } 
+          
+          {/* <Route path="/about" element={<About />} />
           <Route path="/menu" element={<Menu/>} />
           <Route path="/rewards" element={<Reward/>} />
           <Route path="/deals" element={<Deal />} />
-          <Route path="/brands" element={<Brands />} />
+          <Route path="/brands" element={<Brands />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

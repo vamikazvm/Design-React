@@ -20,11 +20,26 @@ const Deals: FC = () => {
       imgGroup: imageGroup,
       imgBogo: imageBogo,
     },
+    {
+      id: "3",
+      DealName: "Spend $100 of Dosist and Get 20% off of Kiva Confections",
+      ActiveDeal: "Active everyday",
+      imgGroup: imageGroup,
+      imgBogo: imageBogo,
+    },
+    {
+      id: "4",
+      DealName: "Spend $100 of Dosist and Get 20% off of Kiva Confections",
+      ActiveDeal: "Active everyday",
+      imgGroup: imageGroup,
+      imgBogo: imageBogo,
+    },
+
   ];
 
   return (
     <div className={styles.MainDeal}>
-      <div className={styles.DealsContainer}>
+      <div className={styles.BannerContainer}>
         <div className={styles.Banner}>
           <h4>Catridges</h4>
         </div>
@@ -38,6 +53,7 @@ const Deals: FC = () => {
         </div>
         {data.map((d) => (
           <div key={d.id}>
+
             <div className={styles.DealBox}>
               <div className={styles.Rec1}></div>
               <div className={styles.Deal1}>

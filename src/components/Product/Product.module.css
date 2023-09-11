@@ -1,3 +1,4 @@
+
 .CategoryWrapper {
   width: 100%;
   display: flex;
@@ -50,10 +51,11 @@
   height: 344px;
   display: flex;
   gap: 26.11px;
+  overflow-x: auto;
 }
 
 .CategoryCard {
-  width: 25%;
+  min-width: 25%;
   height: 231.885px;
   border: 1px solid #f9f9f9;
   background: #fff;
@@ -63,8 +65,10 @@
 .CategoryCard img {
   width: 100%;
   height: 183.478px;
-  margin: 10px;
+  /* margin: 10px; */
   object-fit: contain;
+  position: relative;
+  top: 30px;
 }
 
 .ProductName {
@@ -73,7 +77,7 @@
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.325px;
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 .ProductPrice {

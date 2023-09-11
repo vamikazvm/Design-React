@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
 .MainRewards {
   height: 500px;
   width: 100%;
-  margin: 38px 10px 0px 10px;
+  /* margin-top: 30px; */
 }
 
 .RewardsContainer {
@@ -46,12 +52,13 @@
 }
 .Rewards {
   width: 100%;
+  overflow-x: auto;
   height: 312px;
   display: flex;
   gap: 26.11px;
 }
 .Reward {
-  width: 25%;
+  min-width: 231.885px;
   height: 231.885px;
   border: 1px solid #f9f9f9;
   background: #fff;

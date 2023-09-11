@@ -1,14 +1,16 @@
 /* Swiper */
 
 .SwiperContainer {
-  width: 100%;
-  height: 121px;
+  height: 221px;
   display: flex;
   gap: 65px;
-  /* margin-left: 200px; */
+  /* flex-wrap: wrap; */
+  /* overflow-x: auto; */
 }
 .SwiperProducts {
   display: inline-block;
+  /* min-width:100px; */
+ 
 }
 .SwiperContainer img {
   width: 95px;

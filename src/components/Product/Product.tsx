@@ -47,6 +47,38 @@ export const Product: FC<Iproducts> = ({ category }) => {
       image: image4,
       
     },
+
+    {
+      productName: "Strawberry ",
+      minPrice: "36",
+      maxPrice: "55",
+      image: image1,
+     
+    },
+
+    {
+      productName: "Milk Chocolate ",
+      minPrice: "15",
+      maxPrice: "55",
+      image: image2,
+    
+    },
+
+    {
+      productName: "Relief pen",
+      minPrice: "54",
+      maxPrice: "55",
+      image: image3,
+     
+    },
+
+    {
+      productName: "Hybrid Top Shelf 3.5 grams",
+      minPrice: "49",
+      maxPrice: "55",
+      image: image4,
+      
+    },
   ];
   return (
     <div>

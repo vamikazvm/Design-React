@@ -43,7 +43,42 @@ const Rewards: FC = () => {
       image: image4,
       ImgPoint: imgPoint,
       id: "13",
+      
     },
+    {
+      RewardName: "Dosist",
+      ProductName: "Relief pen - 100 doses",
+      Points: "300",
+      image: image3,
+      ImgPoint: imgPoint,
+      id: "14",
+    },
+
+    {
+      RewardName: "Dosist",
+      ProductName: "Relief pen - 100 doses",
+      Points: "300",
+      image: image4,
+      ImgPoint: imgPoint,
+      id: "15",
+    },
+    {
+      RewardName: "Dosist",
+      ProductName: "Relief pen - 100 doses",
+      Points: "300",
+      image: image3,
+      ImgPoint: imgPoint,
+      id: "16",
+    },
+
+    {
+      RewardName: "Dosist",
+      ProductName: "Relief pen - 100 doses",
+      Points: "300",
+      image: image4,
+      ImgPoint: imgPoint,
+      id: "17",
+    }
   ];
 
   return (
